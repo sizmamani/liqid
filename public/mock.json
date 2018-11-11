@@ -1,0 +1,141 @@
+{
+    "data": [
+        {
+            "_id": "QUESTION_1",
+            "type": "text",
+            "title": "What is your name?",
+            "description": "a paragraph of random text…!",
+            "validation": [
+                {
+                    "type": "min",
+                    "length": 3,
+                    "message": "Your name must not be shorter than 3 characters."
+                },
+                {
+                    "type": "max",
+                    "length": 25,
+                    "message": "Your name must not be longer than 25 characters."
+                }
+            ]
+        },
+        {
+            "_id": "QUESTION_2",
+            "type": "radio",
+            "title": "What is your gender?",
+            "description": "a paragraph of random text…!",
+            "values": [
+                {
+                    "key": "FEMALE",
+                    "text": "Female"
+                },
+                {
+                    "key": "MALE",
+                    "text": "Male"
+                },
+                {
+                    "key": "OTHER",
+                    "text": "Other"
+                }
+            ]
+        },
+        {
+            "_id": "QUESTION_3",
+            "type": "date",
+            "title": "What is your the date of your birth?",
+            "description": "a paragraph of random text…!",
+            "enabledIf": [
+                {
+                    "_id": "QUESTION_2",
+                    "value": "OTHER"
+                }
+            ]
+        },
+        {
+            "_id": "QUESTION_4",
+            "type": "checkbox",
+            "title": "What insurances do you have?",
+            "description": "a paragraph of random text…!",
+            "values": [
+                {
+                    "key": "HEALTH",
+                    "text": "Health"
+                },
+                {
+                    "key": "LIABILITY",
+                    "text": "Liability"
+                },
+                {
+                    "key": "LEGAL",
+                    "text": "Legal"
+                },
+                {
+                    "key": "CAR",
+                    "text": "Car"
+                }
+            ]
+        },
+        {
+            "_id": "QUESTION_5",
+            "type": "select",
+            "title": "What is your employment status?",
+            "description": "a paragraph of random text…!",
+            "values": [
+                {
+                    "key": "Select"
+                },
+                {
+                    "key": "EMPLOYEE",
+                    "text": "Employee"
+                },
+                {
+                    "key": "BUSINESS_OWNER",
+                    "text": "Business Owner"
+                },
+                {
+                    "key": "HOUSE_SPOUSE",
+                    "text": "Housewife / Househusband"
+                },
+                {
+                    "key": "RETIREE",
+                    "text": "Retiree"
+                },
+                {
+                    "key": "STUDENT",
+                    "text": "Student"
+                },
+                {
+                    "key": "SELF_EMPLOYED",
+                    "text": "Self-Employed"
+                },
+                {
+                    "key": "UNEMPLOYED",
+                    "text": "Unemployed"
+                }
+            ]
+        },
+        {
+            "_id": "QUESTION_6",
+            "type": "number",
+            "title": "What is your phone number?",
+            "description": "a paragraph of random text…!",
+            "enabledIf": [
+                {
+                    "_id": "QUESTION_5",
+                    "value": ["EMPLOYEE", "BUSINESS_OWNER", "STUDENT"]
+                }
+            ],
+            "validation": [
+                {
+                    "type": "min",
+                    "length": 7,
+                    "message": "Your number must be only digits and not shorter than 7."
+                },
+                {
+                    "type": "max",
+                    "length": 12,
+                    "message": "Your number must be only digits and not longer than 12."
+                }
+            ]
+        }
+    ]
+}
