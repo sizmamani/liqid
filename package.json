@@ -1,11 +1,10 @@
 {
   "name": "liqid",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
     "moment": "^2.22.2",
-    "query-string": "^6.2.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-redux": "^5.1.0",

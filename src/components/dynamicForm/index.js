@@ -31,6 +31,7 @@ const DynamicForm = ({
 
     const getSummary = (element, index) => {
         const { type, value, values, title } = element
+        if (!value) return
         var q, a //QUESTION && ANSWER
         if (type === 'text' || type === 'number') {
             q = title
@@ -48,7 +49,7 @@ const DynamicForm = ({
             q = title
         }
         return (
-            <div className="form-row">
+            <div key={index} className="form-row">
                 <span className="bold">
                     {q}
                 </span>
