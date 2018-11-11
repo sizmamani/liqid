@@ -5,7 +5,7 @@ import Home from '../routers/home'
 
   const Application = () => (
     <Router>
-        <Route exact path="/" component={Home}/>
+        <Route exact path="/:step?" component={Home}/>
     </Router>
   )
 

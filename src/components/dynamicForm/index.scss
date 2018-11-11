@@ -3,6 +3,7 @@ $grey: grey;
 $lightGrey: lightgrey;
 $white: white;
 $black: #222;
+$red: red;
 //styles
 .container{
     height: 100%;
@@ -42,11 +43,12 @@ $black: #222;
         .progress{
             border: $lightGrey solid 1px;
             border-radius: 5px;
+            height: 15px;
             margin-bottom: 20px;
             padding: 1px;
             > div {
+                transition: all 0.6s;
                 border-radius: 5px;
-                height: 15px;
                 padding: 0 10px;
                 color: $white;
                 text-align: center;
@@ -57,7 +59,13 @@ $black: #222;
     .form-row {
         display: block;
         text-align: center;
-        > label, > input {
+        min-height: 85px;
+        line-height: 35px;
+        > span {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        > label, > input, > select {
             display: block;
             width: 100%;
             box-sizing: border-box;
@@ -65,8 +73,9 @@ $black: #222;
         > label {
             padding: .5em 1em .5em 0;
         }
-        > input {
+        > input, > select {
             padding: .5em;
+            height: 30px;
         }
     }
     .button-row {
@@ -74,7 +83,7 @@ $black: #222;
         padding: .5em;
         margin-top: 50px;
         border-top: $lightGrey solid 1px;
-        > button {
+        > input[type='button'] {
             border-radius: 5px;
             color: $black;
             border: $lightGrey solid 1px;
@@ -87,17 +96,35 @@ $black: #222;
                 transition: all 0.6s;
             }
         }
+        > input[type='button']:disabled {
+            background: $lightGrey;
+            color: $grey;
+            &:hover{
+                cursor: not-allowed;
+                background: $lightGrey;
+                color: $grey;
+            }
+        }
     }
-    .pull-left{
-        float: left;
-    }
-    .pull-right{
-        float: right;
-    }
-    .ligh-grey{
-        background: $lightGrey;
-    }
-    .grey{
-        background: $grey;
-    }
+}
+
+// General
+
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.ligh-grey{
+    background: $lightGrey;
+}
+.grey{
+    background: $grey;
+}
+.red {
+    color: $red;
+}
+.text-left{
+    text-align: left;
 }

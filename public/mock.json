@@ -4,19 +4,7 @@
             "_id": "QUESTION_1",
             "type": "text",
             "title": "What is your name?",
-            "description": "a paragraph of random text…!",
-            "validation": [
-                {
-                    "type": "min",
-                    "length": 3,
-                    "message": "Your name must not be shorter than 3 characters."
-                },
-                {
-                    "type": "max",
-                    "length": 25,
-                    "message": "Your name must not be longer than 25 characters."
-                }
-            ]
+            "description": "a paragraph of random text…!"
         },
         {
             "_id": "QUESTION_2",
@@ -35,18 +23,6 @@
                 {
                     "key": "OTHER",
                     "text": "Other"
-                }
-            ]
-        },
-        {
-            "_id": "QUESTION_3",
-            "type": "date",
-            "title": "What is your the date of your birth?",
-            "description": "a paragraph of random text…!",
-            "enabledIf": [
-                {
-                    "_id": "QUESTION_2",
-                    "value": "OTHER"
                 }
             ]
         },
@@ -110,30 +86,6 @@
                 {
                     "key": "UNEMPLOYED",
                     "text": "Unemployed"
-                }
-            ]
-        },
-        {
-            "_id": "QUESTION_6",
-            "type": "number",
-            "title": "What is your phone number?",
-            "description": "a paragraph of random text…!",
-            "enabledIf": [
-                {
-                    "_id": "QUESTION_5",
-                    "value": ["EMPLOYEE", "BUSINESS_OWNER", "STUDENT"]
-                }
-            ],
-            "validation": [
-                {
-                    "type": "min",
-                    "length": 7,
-                    "message": "Your number must be only digits and not shorter than 7."
-                },
-                {
-                    "type": "max",
-                    "length": 12,
-                    "message": "Your number must be only digits and not longer than 12."
                 }
             ]
         }
