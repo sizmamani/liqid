@@ -11,7 +11,6 @@ class request {
     this.service = service;
   }
   
-
   get(url, callback) {
     return this.service.request({
       method: 'GET',
@@ -21,4 +20,4 @@ class request {
   }
 }
 
-export default new request;
+export default new request();
