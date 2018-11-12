@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { fetchData, updateStep, updateInputData, updateCheckboxData } from './module'
+import { fetchData, updateStep, updateInputData, updateCheckboxData } from './module/home'
 import HomeContainer from './container'
 
 

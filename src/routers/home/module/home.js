@@ -1,13 +1,15 @@
 import request from "../../../services/request"
-
+import constants from "./actionConstants";
 const history = window.location.pathname && window.location.pathname.split("/")
-const FETCH_DATA = "FETCH_DATA"
-const UPDATE_INPUT_DATA = "UPDATE_INPUT_DATA"
-const UPDATE_CHECKBOX_DATA = "UPDATE_CHECKBOX_DATA"
-const UPDATE_STEP = "UPDATE_STEP"
-const SUBMIT_DATA = "SUBMIT_DATA"
-const FORM_DATA = "FORM_DATA"
-const STEP = "STEP"
+const {
+    FETCH_DATA,
+    UPDATE_INPUT_DATA,
+    UPDATE_CHECKBOX_DATA,
+    UPDATE_STEP,
+    SUBMIT_DATA,
+    FORM_DATA,
+    STEP,
+} = constants
 
 export function updateStep(payload) {
     return (dispatch) => {
