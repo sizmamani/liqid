@@ -21,6 +21,7 @@ export function updateStep(payload) {
 }
 
 export function fetchData() {
+    //CAN IMPLEMENT LOADING AND ERROR HANDLING ACTIONS AS WELL LATER
     const cachedData = localStorage.getItem(FORM_DATA)
     return (dispatch) => {
         if (cachedData) {
@@ -99,6 +100,7 @@ function handleUpdateInputData(state, action) {
     }
 }
 
+//NOT IN USE
 function handleSubmitData(state, action) {
     let { dynamicInfo } = state
     let temp = Object.assign([], dynamicInfo)
@@ -112,6 +114,7 @@ function handleSubmitData(state, action) {
         ...state, dynamicInfo: temp
     }
 }
+//
 
 function handleUpdateCheckboxData(state, action) {
     let { dynamicInfo } = state
@@ -144,13 +147,12 @@ function handleFetchData(state, action) {
     }
 }
 
-
 const initialState = {
     dynamicInfo: [],
     step: (history && history.length > 0 && Number(history[1])) || Number(localStorage.getItem(STEP) || 0)
 };
+
 export default function homeReducer(state = initialState, action) {
     const handler = ACTION_HANDLERS[action.type];
-
     return handler ? handler(state, action) : state;
 }

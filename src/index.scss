@@ -1,3 +1,10 @@
+//colors (SHOULD HAVE A SEPRATED SCSS FOR ELEMENTS AND COLORS , ...)
+$grey: grey;
+$lightGrey: lightgrey;
+$white: white;
+$black: #222;
+$red: red;
+
 html, body, #root{
 	margin: 0;
 	padding: 0;
@@ -9,4 +16,31 @@ html, body, #root{
 }
 body {
 	line-height: 1;
+}
+
+// General (Atomic Design - reusable classes) 
+
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.ligh-grey{
+    background: $lightGrey;
+}
+.grey{
+    background: $grey;
+}
+.red {
+    color: $red;
+}
+.text-left{
+    text-align: left;
+}
+.bold{
+    font-weight: bold;
+}
+.margin-top-100{
+    margin-top: 100px;
 }

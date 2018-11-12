@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-
+//A SIMPLE REQUEST SERVICE WRAPPER ONLY GOOD FOR SUNNY DAYS!
 class request {
   
   constructor() {
@@ -10,7 +10,6 @@ class request {
     })
     this.service = service;
   }
-  
   get(url, callback) {
     return this.service.request({
       method: 'GET',
