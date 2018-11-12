@@ -11,7 +11,7 @@ const DynamicForm = ({
 }) => {
     let status
 
-    const progressValue = (100 / dynamicInfo.length) * (step)
+    const progressValue = parseInt((100 / dynamicInfo.length) * (step))
 
     const styles = {
         progressBar: {
