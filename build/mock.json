@@ -1,0 +1,93 @@
+{
+    "data": [
+        {
+            "_id": "QUESTION_1",
+            "type": "text",
+            "title": "What is your name?",
+            "description": "a paragraph of random text…!"
+        },
+        {
+            "_id": "QUESTION_2",
+            "type": "radio",
+            "title": "What is your gender?",
+            "description": "a paragraph of random text…!",
+            "values": [
+                {
+                    "key": "FEMALE",
+                    "text": "Female"
+                },
+                {
+                    "key": "MALE",
+                    "text": "Male"
+                },
+                {
+                    "key": "OTHER",
+                    "text": "Other"
+                }
+            ]
+        },
+        {
+            "_id": "QUESTION_4",
+            "type": "checkbox",
+            "title": "What insurances do you have?",
+            "description": "a paragraph of random text…!",
+            "values": [
+                {
+                    "key": "HEALTH",
+                    "text": "Health"
+                },
+                {
+                    "key": "LIABILITY",
+                    "text": "Liability"
+                },
+                {
+                    "key": "LEGAL",
+                    "text": "Legal"
+                },
+                {
+                    "key": "CAR",
+                    "text": "Car"
+                }
+            ]
+        },
+        {
+            "_id": "QUESTION_5",
+            "type": "select",
+            "title": "What is your employment status?",
+            "description": "a paragraph of random text…!",
+            "values": [
+                {
+                    "key": "Select"
+                },
+                {
+                    "key": "EMPLOYEE",
+                    "text": "Employee"
+                },
+                {
+                    "key": "BUSINESS_OWNER",
+                    "text": "Business Owner"
+                },
+                {
+                    "key": "HOUSE_SPOUSE",
+                    "text": "Housewife / Househusband"
+                },
+                {
+                    "key": "RETIREE",
+                    "text": "Retiree"
+                },
+                {
+                    "key": "STUDENT",
+                    "text": "Student"
+                },
+                {
+                    "key": "SELF_EMPLOYED",
+                    "text": "Self-Employed"
+                },
+                {
+                    "key": "UNEMPLOYED",
+                    "text": "Unemployed"
+                }
+            ]
+        }
+    ]
+}
